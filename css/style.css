@@ -1,0 +1,1566 @@
+@charset "UTF-8";
+/*Обнуление*/
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*--------------------*/
+body {
+  font-family: "Rubik", sans-serif;
+}
+
+.container {
+  width: 1100px;
+  margin: 0 auto;
+}
+
+header {
+  width: 100%;
+  background-color: #1e6312;
+}
+header .info_top {
+  width: 100%;
+  background-color: #f5f5f5;
+}
+header .info_top .top_info {
+  width: 100%;
+  height: 45px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .info_top .top_info .info_1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .info_top .top_info .info_1 .info_i {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+header .info_top .top_info .info_1 .info_i p {
+  margin-left: 7px;
+}
+header .info_top .top_info .info_2 {
+  display: flex;
+  align-items: center;
+}
+header .info_top .top_info .info_2 .info_c {
+  margin-left: 10px;
+}
+header .header {
+  width: 100%;
+  height: 150px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .header .logo {
+  height: 130px;
+}
+header .header .logo img {
+  height: 100%;
+}
+header .header .info_block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-left: 1px solid #467e44;
+}
+header .header .info_block img {
+  margin: 0 15px 0 30px;
+}
+header .header .info_block p {
+  font-size: 16px;
+  color: #fff;
+}
+header .header .info_block p span {
+  font-weight: 700;
+  letter-spacing: 1px;
+  font-size: 20px;
+}
+header .header .menu a {
+  color: #fff;
+  font-weight: 600;
+  font-size: 18px;
+  margin-left: 25px;
+}
+
+.bg_block {
+  width: 100%;
+  height: 80vh;
+  position: relative;
+}
+.bg_block .bg_img {
+  width: 100%;
+  height: 100%;
+}
+.bg_block .bg_img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.bg_block .bg_text {
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  font-size: 60px;
+  font-weight: 400;
+  color: #fff;
+}
+
+.baner_1 {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  padding: 100px 0;
+}
+.baner_1 .baner_1_img {
+  width: 50%;
+}
+.baner_1 .baner_1_img img {
+  width: 100%;
+  object-fit: cover;
+}
+.baner_1 .baner_1_text {
+  width: 50%;
+  padding-left: 40px;
+}
+.baner_1 .baner_1_text h3 {
+  color: #4ED137;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  line-height: 1.2em;
+}
+.baner_1 .baner_1_text h2 {
+  font-size: 30px;
+  font-weight: 600;
+  color: #172541;
+  line-height: 1.2em;
+  margin: 30px 0;
+}
+.baner_1 .baner_1_text p {
+  color: #565872;
+  font-size: 16px;
+  line-height: 1.8em;
+}
+
+.baner_2 {
+  position: relative;
+}
+.baner_2 .baner_2_vn {
+  padding: 60px 0;
+}
+.baner_2 .baner_2_vn .baner_2_text {
+  text-align: center;
+}
+.baner_2 .baner_2_vn .baner_2_text h3 {
+  color: #4ED137;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  line-height: 1.2em;
+}
+.baner_2 .baner_2_vn .baner_2_text h2 {
+  font-size: 40px;
+  font-weight: 600;
+  color: #172541;
+  line-height: 1.2em;
+  margin: 30px 0;
+}
+.baner_2 .baner_2_vn .baner_2_text p {
+  color: #565872;
+  font-size: 16px;
+  line-height: 1.8em;
+}
+.baner_2 .baner_2_vn .baner_2_karts {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+.baner_2 .baner_2_vn .baner_2_karts .karts_item {
+  width: 49%;
+  background-color: #1e6312;
+  padding: 20px;
+  margin-bottom: 15px;
+}
+.baner_2 .baner_2_vn .baner_2_karts .karts_item .karts_img {
+  width: 100%;
+}
+.baner_2 .baner_2_vn .baner_2_karts .karts_item .karts_img img {
+  width: 100%;
+  object-fit: cover;
+}
+.baner_2 .baner_2_vn .baner_2_karts .karts_item .karts_text {
+  text-align: center;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 30px 0;
+}
+.baner_2::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.3;
+  background: url("../img/ban_2.png") center/cover no-repeat;
+}
+
+.baner_3 {
+  width: 100%;
+  position: relative;
+}
+.baner_3 .baner_3_vn {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  padding: 100px 0;
+}
+.baner_3 .baner_3_vn .baner_3_text {
+  width: 50%;
+}
+.baner_3 .baner_3_vn .baner_3_text h3 {
+  font-size: 16px;
+  line-height: 1.2em;
+  color: #4ED137;
+  font-weight: 500;
+}
+.baner_3 .baner_3_vn .baner_3_text h2 {
+  margin: 25px 0;
+  font-size: 30px;
+  color: #fff;
+  line-height: 1.2em;
+  font-weight: 500;
+}
+.baner_3 .baner_3_vn .baner_3_text .text_3 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.baner_3 .baner_3_vn .baner_3_text .text_3 img {
+  margin-right: 23px;
+}
+.baner_3 .baner_3_vn .baner_3_text .text_3 p {
+  color: #fff;
+  font-size: 16px;
+  line-height: 1.15em;
+}
+.baner_3 .baner_3_vn .baner_3_text .text_3:nth-child(6) {
+  margin-bottom: 50px;
+}
+.baner_3 .baner_3_vn .baner_3_text a {
+  padding: 17px 35px;
+  border-radius: 30px;
+  background-color: #4ed137;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+}
+.baner_3 .baner_3_vn .baner_3_img {
+  width: 50%;
+}
+.baner_3 .baner_3_vn .baner_3_img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.baner_3 .baner_3_vn .text_mod_3 {
+  padding-left: 40px;
+}
+.baner_3 .baner_3_vn .text_mod_3 .text_3:nth-child(6) {
+  margin-bottom: 10px;
+}
+.baner_3 .baner_3_vn .text_mod_3 .text_3:nth-child(9) {
+  margin-bottom: 50px;
+}
+.baner_3::after {
+  content: "";
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+  background-color: #060a21;
+}
+.baner_3::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  opacity: 0.1;
+  background: url("../img/ban_3.jpg") center/cover no-repeat;
+}
+
+.baner_4 {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 0;
+}
+.baner_4 h2 {
+  color: #172541;
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+.baner_4 p {
+  max-width: 600px;
+  padding: 0 30px;
+  color: #565872;
+  font-size: 16px;
+  line-height: 1.8em;
+}
+.baner_4 .knop {
+  width: 260px;
+  border-radius: 30px;
+  padding: 21px 35px;
+  background-color: #4ed137;
+}
+.baner_4 .knop a {
+  color: #fff;
+  font-weight: 500;
+}
+
+.baner_5 {
+  width: 100%;
+  background-color: #384858;
+  padding: 50px 0;
+}
+.baner_5 .baner_5_zag {
+  width: 100%;
+  color: #fff;
+  font-size: 33px;
+  font-weight: 500;
+  text-align: center;
+}
+.baner_5 .baner_5_vn {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 50px;
+}
+.baner_5 .baner_5_vn .baner_5_item {
+  width: 200px;
+  margin-bottom: 20px;
+}
+.baner_5 .baner_5_vn .baner_5_item img {
+  width: 100%;
+}
+
+.baner_6 {
+  padding: 70px 0 15px 0;
+  background: url("../img/ban_6.png") center/cover no-repeat;
+}
+.baner_6 .baner_6_zag {
+  width: 100%;
+  text-align: center;
+}
+.baner_6 .baner_6_zag h3 {
+  color: #4ED137;
+  font-size: 16px;
+  font-weight: 500;
+}
+.baner_6 .baner_6_zag h2 {
+  font-size: 36px;
+  line-height: 1.2em;
+  color: #172541;
+  margin: 20px 0 60px 0;
+}
+.baner_6 .baner_6_vn {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+}
+.baner_6 .baner_6_vn .karts_1 {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 50%;
+  padding: 70px 30px;
+  box-shadow: 0 0 10px #eef2f6;
+  background-color: #fff;
+}
+.baner_6 .baner_6_vn .karts_1 h2 {
+  font-size: 30px;
+  color: #172541;
+  font-weight: 500;
+}
+.baner_6 .baner_6_vn .karts_1 h3 {
+  color: #565872;
+  font-size: 16px;
+  line-height: 1.8em;
+  margin: 35px 0;
+}
+.baner_6 .baner_6_vn .karts_1 .karts_t {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-bottom: 30px;
+}
+.baner_6 .baner_6_vn .karts_1 .karts_t p {
+  color: #565872;
+  font-size: 16px;
+  line-height: 1.8em;
+  margin-left: 20px;
+}
+.baner_6 .baner_6_vn .karts_1 .karts_t p span {
+  font-size: 20px;
+  color: #172541;
+  font-weight: 500;
+}
+.baner_6 .baner_6_vn .karts_2 {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 50%;
+  background-color: #eef2f6;
+  padding: 70px 30px;
+  box-shadow: 0 0 10px #eef2f6;
+}
+.baner_6 .baner_6_vn .karts_2 h2 {
+  font-size: 30px;
+  color: #172541;
+  font-weight: 500;
+}
+.baner_6 .baner_6_vn .karts_2 p {
+  color: #565872;
+  font-size: 16px;
+  line-height: 1.8em;
+  margin: 35px 0;
+}
+.baner_6 .baner_6_vn .karts_2 input {
+  margin-bottom: 40px;
+  display: flex;
+  width: 100%;
+  height: 50px;
+  box-shadow: 0 0 10px #f2f2f2;
+  border: 1px solid #f2f2f2;
+  padding-left: 20px;
+  font-size: 16px;
+}
+.baner_6 .baner_6_vn .karts_2 button {
+  width: 100%;
+  height: 50px;
+  background-color: #1a2b63;
+  color: #fff;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+::placeholder {
+  color: #909dbc;
+}
+
+.baner_7 {
+  width: 100%;
+  background-color: #eef2f6;
+  padding: 50px 0;
+}
+.baner_7 .baner_7_vn {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.baner_7 .baner_7_vn .baner_7_img {
+  max-width: 500px;
+}
+.baner_7 .baner_7_vn .baner_7_img img {
+  width: 100%;
+}
+.baner_7 .baner_7_vn .baner_7_img:nth-child(2) {
+  border: 2px solid #a1a3a5;
+  opacity: 0.8;
+}
+
+footer {
+  width: 100%;
+}
+footer .footer_block {
+  width: 100%;
+  position: relative;
+}
+footer .footer_block .footer_1 .footer_1_1 {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  padding: 60px 0;
+  border-bottom: 2px solid #212121;
+}
+footer .footer_block .footer_1 .footer_1_1 p {
+  font-size: 30px;
+  font-weight: 500;
+}
+footer .footer_block .footer_1 .footer_1_1 a {
+  padding: 18px 35px;
+  background-color: #4ED137;
+  color: #fff;
+  border-radius: 30px;
+  font-weight: 500;
+}
+footer .footer_block .footer_1 .footer_1_2 {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  padding: 55px 0;
+}
+footer .footer_block .footer_1 .footer_1_2 .item {
+  width: 33%;
+}
+footer .footer_block .footer_1 .footer_1_2 .item h2 {
+  color: #fff;
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+footer .footer_block .footer_1 .footer_1_2 .item .item_text {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 20px;
+}
+footer .footer_block .footer_1 .footer_1_2 .item .item_text p {
+  color: #fff;
+  line-height: 1.8em;
+  font-size: 16px;
+  font-weight: 400;
+  margin-left: 15px;
+}
+footer .footer_block .footer_1 .footer_1_2 .item .item_text .f_img {
+  width: 100px;
+}
+footer .footer_block .footer_1 .footer_1_2 .item .footer_form {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+}
+footer .footer_block .footer_1 .footer_1_2 .item .footer_form input {
+  width: 100%;
+  height: 60px;
+  padding-left: 20px;
+  color: #a0a0a0;
+  font-size: 16px;
+  font-weight: 400;
+  border: 1px solid #a0a0a0;
+  background-color: rgba(255, 255, 255, 0);
+}
+footer .footer_block .footer_1 .footer_1_2 .item .footer_form button {
+  height: 60px;
+  width: 60px;
+  background-color: #4ed137;
+}
+footer .footer_block .footer_1 .footer_1_2 .item p {
+  color: #fff;
+  line-height: 1.8em;
+  font-size: 16px;
+  font-weight: 400;
+}
+footer .footer_block::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #101010;
+  z-index: -2;
+}
+footer .footer_block ::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.01;
+  background: url("../img/ban_f.png") center/cover no-repeat;
+}
+footer .footer_2 {
+  width: 100%;
+  padding: 30px 0;
+  background-color: #101010;
+}
+footer .footer_2 .footer_2_1 {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .footer_2 .footer_2_1 img {
+  height: 150px;
+}
+footer .footer_2 .footer_2_1 p {
+  color: #A5A5A5;
+  font-size: 16px;
+}
+
+@media screen and (max-width: 1199px) {
+  .container {
+    width: 900px;
+  }
+
+  .baner_4 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 0;
+    text-align: center;
+  }
+  .baner_4 h2 {
+    color: #172541;
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: 3px;
+  }
+  .baner_4 p {
+    max-width: 600px;
+    padding: 0 30px;
+    color: #565872;
+    font-size: 16px;
+    line-height: 1.8em;
+    margin: 50px 0;
+  }
+  .baner_4 .knop {
+    width: 260px;
+    border-radius: 30px;
+    padding: 21px 35px;
+    background-color: #4ed137;
+  }
+  .baner_4 .knop a {
+    color: #fff;
+    font-weight: 500;
+  }
+}
+@media screen and (max-width: 991px) {
+  .container {
+    width: 667px;
+  }
+
+  header {
+    width: 100%;
+    background-color: #1e6312;
+  }
+  header .info_top {
+    width: 100%;
+    background-color: #f5f5f5;
+  }
+  header .info_top .top_info {
+    width: 100%;
+    height: auto;
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+  }
+  header .info_top .top_info .info_1 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+  header .info_top .top_info .info_1 .info_i {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+  }
+  header .info_top .top_info .info_1 .info_i p {
+    margin-left: 7px;
+    font-size: 12px;
+  }
+  header .info_top .top_info .info_2 {
+    display: flex;
+    align-items: center;
+  }
+  header .info_top .top_info .info_2 .info_c {
+    margin-left: 10px;
+  }
+  header .header {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  header .header .logo {
+    height: 80px;
+  }
+  header .header .logo img {
+    height: 100%;
+  }
+  header .header .info_block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-left: 1px solid #467e44;
+  }
+  header .header .info_block img {
+    margin: 0 15px 0 30px;
+  }
+  header .header .info_block p {
+    font-size: 16px;
+    color: #fff;
+  }
+  header .header .info_block p span {
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-size: 20px;
+  }
+  header .header .menu a {
+    color: #fff;
+    font-weight: 600;
+    font-size: 18px;
+    margin-left: 25px;
+  }
+
+  .baner_2 {
+    position: relative;
+  }
+  .baner_2 .baner_2_vn {
+    padding: 60px 0;
+  }
+  .baner_2 .baner_2_vn .baner_2_text {
+    text-align: center;
+  }
+  .baner_2 .baner_2_vn .baner_2_text h3 {
+    color: #4ED137;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    line-height: 1.2em;
+  }
+  .baner_2 .baner_2_vn .baner_2_text h2 {
+    font-size: 40px;
+    font-weight: 600;
+    color: #172541;
+    line-height: 1.2em;
+    margin: 30px 0;
+  }
+  .baner_2 .baner_2_vn .baner_2_text p {
+    color: #565872;
+    font-size: 16px;
+    line-height: 1.8em;
+  }
+  .baner_2 .baner_2_vn .baner_2_karts {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+  }
+  .baner_2 .baner_2_vn .baner_2_karts .karts_item {
+    width: 49%;
+    background-color: #1e6312;
+    padding: 20px;
+    margin-bottom: 15px;
+  }
+  .baner_2 .baner_2_vn .baner_2_karts .karts_item .karts_img {
+    width: 100%;
+  }
+  .baner_2 .baner_2_vn .baner_2_karts .karts_item .karts_img img {
+    width: 100%;
+    object-fit: cover;
+  }
+  .baner_2 .baner_2_vn .baner_2_karts .karts_item .karts_text {
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 30px 0;
+  }
+  .baner_2::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.3;
+    background: url("../img/ban_2.png") center/cover no-repeat;
+  }
+
+  .baner_3 {
+    width: 100%;
+    position: relative;
+  }
+  .baner_3 .baner_3_vn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 0;
+  }
+  .baner_3 .baner_3_vn .baner_3_text {
+    width: 100%;
+    padding: 60px 20px;
+  }
+  .baner_3 .baner_3_vn .baner_3_text h3 {
+    font-size: 16px;
+    line-height: 1.2em;
+    color: #4ED137;
+    font-weight: 500;
+  }
+  .baner_3 .baner_3_vn .baner_3_text h2 {
+    margin: 25px 0;
+    font-size: 30px;
+    color: #fff;
+    line-height: 1.2em;
+    font-weight: 500;
+  }
+  .baner_3 .baner_3_vn .baner_3_text .text_3 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  .baner_3 .baner_3_vn .baner_3_text .text_3 img {
+    margin-right: 23px;
+  }
+  .baner_3 .baner_3_vn .baner_3_text .text_3 p {
+    color: #fff;
+    font-size: 16px;
+    line-height: 1.15em;
+  }
+  .baner_3 .baner_3_vn .baner_3_text .text_3:nth-child(6) {
+    margin-bottom: 50px;
+  }
+  .baner_3 .baner_3_vn .baner_3_text a {
+    padding: 17px 35px;
+    border-radius: 30px;
+    background-color: #4ed137;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .baner_3 .baner_3_vn .baner_3_img {
+    width: 100%;
+  }
+  .baner_3 .baner_3_vn .baner_3_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .baner_3 .baner_3_vn .text_mod_3 {
+    padding-left: 20px;
+  }
+  .baner_3 .baner_3_vn .text_mod_3 .text_3:nth-child(6) {
+    margin-bottom: 10px;
+  }
+  .baner_3 .baner_3_vn .text_mod_3 .text_3:nth-child(9) {
+    margin-bottom: 50px;
+  }
+  .baner_3::after {
+    content: "";
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    background-color: #060a21;
+  }
+  .baner_3::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0.1;
+    background: url("../img/ban_3.jpg") center/cover no-repeat;
+  }
+
+  .baner_7 {
+    width: 100%;
+    background-color: #eef2f6;
+    padding: 50px 0;
+  }
+  .baner_7 .baner_7_vn {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+  }
+  .baner_7 .baner_7_vn .baner_7_img {
+    max-width: 500px;
+  }
+  .baner_7 .baner_7_vn .baner_7_img img {
+    width: 100%;
+  }
+  .baner_7 .baner_7_vn .baner_7_img:nth-child(1) {
+    margin-bottom: 30px;
+  }
+
+  .baner_6 {
+    padding: 70px 0 15px 0;
+    background: url("../img/ban_6.png") center/cover no-repeat;
+  }
+  .baner_6 .baner_6_zag {
+    width: 100%;
+    text-align: center;
+    padding: 0 20px;
+  }
+  .baner_6 .baner_6_zag h3 {
+    color: #4ED137;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .baner_6 .baner_6_zag h2 {
+    font-size: 27px;
+    line-height: 1.2em;
+    color: #172541;
+    margin: 20px 0 60px 0;
+  }
+  .baner_6 .baner_6_vn {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .baner_6 .baner_6_vn .karts_1 {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 100%;
+    padding: 70px 30px;
+    box-shadow: 0 0 10px #eef2f6;
+    background-color: #fff;
+  }
+  .baner_6 .baner_6_vn .karts_1 h2 {
+    font-size: 25px;
+    color: #172541;
+    font-weight: 500;
+  }
+  .baner_6 .baner_6_vn .karts_1 h3 {
+    color: #565872;
+    font-size: 14px;
+    line-height: 1.8em;
+    margin: 35px 0;
+  }
+  .baner_6 .baner_6_vn .karts_1 .karts_t {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 30px;
+  }
+  .baner_6 .baner_6_vn .karts_1 .karts_t p {
+    color: #565872;
+    font-size: 14px;
+    line-height: 1.8em;
+    margin-left: 20px;
+  }
+  .baner_6 .baner_6_vn .karts_1 .karts_t p span {
+    font-size: 17px;
+    color: #172541;
+    font-weight: 500;
+  }
+  .baner_6 .baner_6_vn .karts_2 {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 100%;
+    background-color: #eef2f6;
+    padding: 70px 30px;
+    box-shadow: 0 0 10px #eef2f6;
+  }
+  .baner_6 .baner_6_vn .karts_2 h2 {
+    font-size: 25px;
+    color: #172541;
+    font-weight: 500;
+  }
+  .baner_6 .baner_6_vn .karts_2 p {
+    color: #565872;
+    font-size: 14px;
+    line-height: 1.8em;
+    margin: 35px 0;
+  }
+  .baner_6 .baner_6_vn .karts_2 input {
+    margin-bottom: 40px;
+    display: flex;
+    width: 100%;
+    height: 50px;
+    box-shadow: 0 0 10px #f2f2f2;
+    border: 1px solid #f2f2f2;
+    padding-left: 20px;
+    font-size: 16px;
+  }
+  .baner_6 .baner_6_vn .karts_2 button {
+    width: 100%;
+    height: 50px;
+    background-color: #1a2b63;
+    color: #fff;
+    font-weight: 500;
+    font-size: 14px;
+  }
+
+  footer {
+    width: 100%;
+  }
+  footer .footer_block {
+    width: 100%;
+    position: relative;
+  }
+  footer .footer_block .footer_1 .footer_1_1 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    padding: 60px 20px;
+    text-align: center;
+    border-bottom: 2px solid #212121;
+  }
+  footer .footer_block .footer_1 .footer_1_1 p {
+    font-size: 23px;
+    font-weight: 500;
+    margin-bottom: 30px;
+  }
+  footer .footer_block .footer_1 .footer_1_1 a {
+    padding: 16px 35px;
+    background-color: #4ED137;
+    color: #fff;
+    border-radius: 30px;
+    font-weight: 500;
+  }
+  footer .footer_block .footer_1 .footer_1_2 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: stretch;
+    padding: 55px 0;
+  }
+  footer .footer_block .footer_1 .footer_1_2 .item {
+    width: 100%;
+    margin-bottom: 30px;
+    padding: 0 20px;
+  }
+  footer .footer_block .footer_1 .footer_1_2 .item h2 {
+    color: #fff;
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 30px;
+  }
+  footer .footer_block .footer_1 .footer_1_2 .item .item_text {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  footer .footer_block .footer_1 .footer_1_2 .item .item_text p {
+    color: #fff;
+    line-height: 1.8em;
+    font-size: 16px;
+    font-weight: 400;
+    margin-left: 15px;
+  }
+  footer .footer_block .footer_1 .footer_1_2 .item .item_text .f_img {
+    width: 100px;
+  }
+  footer .footer_block .footer_1 .footer_1_2 .item .footer_form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+  footer .footer_block .footer_1 .footer_1_2 .item .footer_form input {
+    width: 100%;
+    height: 60px;
+    padding-left: 20px;
+    color: #a0a0a0;
+    font-size: 16px;
+    font-weight: 400;
+    border: 1px solid #a0a0a0;
+    background-color: rgba(255, 255, 255, 0);
+  }
+  footer .footer_block .footer_1 .footer_1_2 .item .footer_form button {
+    height: 60px;
+    width: 60px;
+    background-color: #4ed137;
+  }
+  footer .footer_block .footer_1 .footer_1_2 .item p {
+    color: #fff;
+    line-height: 1.8em;
+    font-size: 16px;
+    font-weight: 400;
+  }
+  footer .footer_block::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #101010;
+    z-index: -2;
+  }
+  footer .footer_block ::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.01;
+    background: url("../img/ban_f.png") center/cover no-repeat;
+  }
+  footer .footer_2 {
+    width: 100%;
+    padding: 30px 0;
+    background-color: #101010;
+    padding: 30px 20px;
+  }
+  footer .footer_2 .footer_2_1 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  footer .footer_2 .footer_2_1 img {
+    height: 150px;
+    margin-bottom: 20px;
+  }
+  footer .footer_2 .footer_2_1 p {
+    color: #A5A5A5;
+    font-size: 16px;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 767px) {
+  .container {
+    width: 500px;
+  }
+
+  .bg_block {
+    width: 100%;
+    height: 70vh;
+    position: relative;
+  }
+  .bg_block .bg_img {
+    width: 100%;
+    height: 100%;
+  }
+  .bg_block .bg_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .bg_block .bg_text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 60px;
+    font-weight: 400;
+    color: #fff;
+  }
+
+  .baner_1 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 0;
+  }
+  .baner_1 .baner_1_img {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  .baner_1 .baner_1_img img {
+    width: 100%;
+    object-fit: cover;
+  }
+  .baner_1 .baner_1_text {
+    width: 100%;
+    padding-left: 0px;
+    padding: 0 25px;
+    text-align: center;
+  }
+  .baner_1 .baner_1_text h3 {
+    color: #4ED137;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    line-height: 1.2em;
+  }
+  .baner_1 .baner_1_text h2 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #172541;
+    line-height: 1.2em;
+    margin: 30px 0;
+  }
+  .baner_1 .baner_1_text p {
+    color: #565872;
+    font-size: 13px;
+    line-height: 1.8em;
+  }
+
+  .baner_2 {
+    position: relative;
+  }
+  .baner_2 .baner_2_vn {
+    padding: 60px 0;
+  }
+  .baner_2 .baner_2_vn .baner_2_text {
+    text-align: center;
+    padding: 0 20px;
+  }
+  .baner_2 .baner_2_vn .baner_2_text h3 {
+    color: #4ED137;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    line-height: 1.2em;
+  }
+  .baner_2 .baner_2_vn .baner_2_text h2 {
+    font-size: 25px;
+    font-weight: 600;
+    color: #172541;
+    line-height: 1.2em;
+    margin: 30px 0;
+  }
+  .baner_2 .baner_2_vn .baner_2_text p {
+    color: #565872;
+    font-size: 13px;
+    line-height: 1.8em;
+  }
+  .baner_2 .baner_2_vn .baner_2_karts {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+  }
+  .baner_2 .baner_2_vn .baner_2_karts .karts_item {
+    width: 100%;
+    background-color: #1e6312;
+    padding: 20px;
+    margin-bottom: 15px;
+  }
+  .baner_2 .baner_2_vn .baner_2_karts .karts_item .karts_img {
+    width: 100%;
+  }
+  .baner_2 .baner_2_vn .baner_2_karts .karts_item .karts_img img {
+    width: 100%;
+    object-fit: cover;
+  }
+  .baner_2 .baner_2_vn .baner_2_karts .karts_item .karts_text {
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 20px 0;
+  }
+  .baner_2::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.3;
+    background: url("../img/ban_2.png") center/cover no-repeat;
+  }
+}
+@media screen and (max-width: 575px) {
+  .container {
+    width: 100%;
+  }
+
+  header {
+    width: 100%;
+    background-color: #1e6312;
+  }
+  header .header {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 0 10px;
+  }
+  header .header .logo {
+    height: 80px;
+  }
+  header .header .logo img {
+    height: 100%;
+  }
+  header .header .info_block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-left: 1px solid #467e44;
+  }
+  header .header .info_block img {
+    margin: 0 15px 0 30px;
+  }
+  header .header .info_block p {
+    font-size: 13px;
+    color: #fff;
+  }
+  header .header .info_block p span {
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-size: 15px;
+  }
+  header .header .menu {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  header .header .menu a {
+    color: #fff;
+    font-weight: 600;
+    font-size: 12px;
+    margin-left: 0px;
+  }
+
+  .baner_3 {
+    width: 100%;
+    position: relative;
+  }
+  .baner_3 .baner_3_vn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 0;
+  }
+  .baner_3 .baner_3_vn .baner_3_text {
+    width: 100%;
+    padding: 60px 10px;
+  }
+  .baner_3 .baner_3_vn .baner_3_text h3 {
+    font-size: 12px;
+    line-height: 1.2em;
+    color: #4ED137;
+    font-weight: 500;
+  }
+  .baner_3 .baner_3_vn .baner_3_text h2 {
+    margin: 19px 0;
+    font-size: 30px;
+    color: #fff;
+    line-height: 1.2em;
+    font-weight: 500;
+  }
+  .baner_3 .baner_3_vn .baner_3_text .text_3 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  .baner_3 .baner_3_vn .baner_3_text .text_3 img {
+    width: 30px;
+    margin-right: 7px;
+  }
+  .baner_3 .baner_3_vn .baner_3_text .text_3 p {
+    color: #fff;
+    font-size: 10px;
+    line-height: 1.15em;
+  }
+  .baner_3 .baner_3_vn .baner_3_text .text_3:nth-child(6) {
+    margin-bottom: 50px;
+  }
+  .baner_3 .baner_3_vn .baner_3_text a {
+    padding: 12px 26px;
+    border-radius: 30px;
+    background-color: #4ed137;
+    color: #fff;
+    font-size: 11px;
+    font-weight: 500;
+  }
+  .baner_3 .baner_3_vn .baner_3_img {
+    width: 100%;
+  }
+  .baner_3 .baner_3_vn .baner_3_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .baner_3 .baner_3_vn .text_mod_3 {
+    padding-left: 20px;
+  }
+  .baner_3 .baner_3_vn .text_mod_3 .text_3:nth-child(6) {
+    margin-bottom: 10px;
+  }
+  .baner_3 .baner_3_vn .text_mod_3 .text_3:nth-child(9) {
+    margin-bottom: 50px;
+  }
+  .baner_3::after {
+    content: "";
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    background-color: #060a21;
+  }
+  .baner_3::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0.1;
+    background: url("../img/ban_3.jpg") center/cover no-repeat;
+  }
+
+  .baner_4 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 0;
+    text-align: center;
+  }
+  .baner_4 h2 {
+    color: #172541;
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 3px;
+  }
+  .baner_4 p {
+    max-width: 600px;
+    padding: 0 30px;
+    color: #565872;
+    font-size: 14px;
+    line-height: 1.8em;
+    margin: 50px 0;
+  }
+  .baner_4 .knop {
+    width: 200px;
+    font-size: 13px;
+    border-radius: 30px;
+    padding: 14px 0px;
+    background-color: #4ed137;
+  }
+  .baner_4 .knop a {
+    color: #fff;
+    font-weight: 500;
+  }
+}
